@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background: url('imaged/floodhome.jpg') no-repeat center center fixed; /* Replace with your image */
+            background: url('images/flood2.jpg') no-repeat center center fixed; /* Correct path to image */
             background-size: cover;
             position: relative;
         }
@@ -26,14 +26,14 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker overlay for more fade */
             z-index: 1;
         }
 
         .container {
             position: relative;
             z-index: 2;
-            background-color: rgba(0, 0, 0, 0.6); /* Transparent dark background */
+            background-color: rgba(0, 0, 0, 0.8); /* More opaque dark background */
             padding: 20px;
             border-radius: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -53,6 +53,7 @@
             margin: 10px 0;
             border-radius: 5px;
             border: none;
+            box-sizing: border-box; /* Ensures padding doesn't affect overall width */
         }
 
         .submit-button {
@@ -90,4 +91,10 @@
         <form action="mailto:naimur2020rahman@gmail.com" method="post" enctype="text/plain">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Paste the link here" rows
+            <textarea name="message" placeholder="Paste the link here" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Send Email</button>
+        </form>
+        <a href="index.html" class="back-button">Back to Home</a>
+    </div>
+</body>
+</html>
